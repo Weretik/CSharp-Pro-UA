@@ -94,6 +94,35 @@ namespace _2._System_collections
             }
 
             CompareValues(accounts3);
+
+            /*
+             * Завдання 6 
+
+            Використовуючи клас SortedList, створіть невелику колекцію та виведіть на екран значення пар «ключ-значення» спочатку в алфавітному порядку, а потім у зворотному.
+            */
+
+            SortedList<string, int> sortedList = new();
+
+            sortedList.Add("Банан", 78);
+            sortedList.Add("Яблуко", 35);
+            sortedList.Add("Гарбуз", 45);
+            sortedList.Add("Мандарин", 98);
+
+            Console.WriteLine();
+            Console.WriteLine("Пари в алфавітному порядку:");
+            foreach (var (key, value) in sortedList)
+            {
+                Console.WriteLine($"Ключ: {key}, Значення: {value}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Пари в зворотному порядку:");
+            var reversedList = sortedList.Reverse();
+
+            foreach (var (key, value) in reversedList)
+            {
+                Console.WriteLine($"Ключ: {key}, Значення: {value}");
+            }
         }
 
         public static void CompareValues(OrderedDictionary accounts)
@@ -115,7 +144,6 @@ namespace _2._System_collections
             Console.WriteLine($"Максимальна сума: {maxValue}");
             Console.WriteLine();
             Console.WriteLine($"Мінімальна сума: {minValue}");
-
         }
 
     }
