@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.Specialized;
+using System.Text;
 
 namespace _2._System_collections
 {
@@ -63,17 +64,57 @@ namespace _2._System_collections
             // Другий спосіб
             List<Account> accounts2 = new List<Account>();
 
-            // Додаємо рахунки
             accounts2.Add(new Account(101, 15000.50));
             accounts2.Add(new Account(102, 25000.75));
             accounts2.Add(new Account(103, 12500.20));
 
-            // Виводимо інформацію по рахунках
             foreach (var account in accounts2)
             {
                 Console.WriteLine($"Рахунок {account.AccountNumber} - доступна сума: {account.AvailableAmount} грн.");
             }
 
+            /*
+             * Завдання 4 
+
+            Створіть колекцію типу OrderedDictionary та реалізуйте у ній можливість порівняння значень.
+            */
+            Console.WriteLine();
+            OrderedDictionary accounts3 = new OrderedDictionary();
+
+            accounts3.Add("Account1", 15000.50);
+            accounts3.Add("Account2", 25000.75);
+            accounts3.Add("Account3", 12500.20);
+            accounts3.Add("Account4", 20000.00);
+
+            Console.WriteLine("Дані з OrderedDictionary:");
+            foreach (var key in accounts3.Keys)
+            {
+                var value = accounts3[key];
+                Console.WriteLine($"Рахунок: {key}, Сума: {value}");
+            }
+
+            CompareValues(accounts3);
+        }
+
+        public static void CompareValues(OrderedDictionary accounts)
+        {
+            double maxValue = double.MinValue;
+            double minValue = double.MaxValue;
+
+            foreach (var key in accounts.Keys)
+            {
+                double value = (double)accounts[key];
+
+                if (value > maxValue)
+                    maxValue = value;
+
+                if (value < minValue)
+                    minValue = value;
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Максимальна сума: {maxValue}");
+            Console.WriteLine();
+            Console.WriteLine($"Мінімальна сума: {minValue}");
 
         }
 
