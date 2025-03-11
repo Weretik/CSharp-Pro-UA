@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Custom collections", "1. Custom collections\1. Custom collections.csproj", "{874E2C0C-4361-4FBE-A9E4-C3640E0AAD8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. System collections", "2. System collections\2. System collections.csproj", "{0CB3769E-24D8-494F-B781-0B99A048B36A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{874E2C0C-4361-4FBE-A9E4-C3640E0AAD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{874E2C0C-4361-4FBE-A9E4-C3640E0AAD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{874E2C0C-4361-4FBE-A9E4-C3640E0AAD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB3769E-24D8-494F-B781-0B99A048B36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB3769E-24D8-494F-B781-0B99A048B36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB3769E-24D8-494F-B781-0B99A048B36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB3769E-24D8-494F-B781-0B99A048B36A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
