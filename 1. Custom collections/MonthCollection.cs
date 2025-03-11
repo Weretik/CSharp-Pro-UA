@@ -11,18 +11,18 @@ namespace _1._Custom_collections
     {
         Month[] months =
         {
-            new Month("January", 1, 31),
-            new Month("February", 2, 28),
-            new Month("March", 3, 31),
-            new Month("April", 4, 30),
-            new Month("May", 5, 31),
-            new Month("June", 6, 30),
-            new Month("July", 7, 31),
-            new Month("August", 8, 31),
-            new Month("September", 9, 30),
-            new Month("October", 10, 31),
-            new Month("November", 11, 30),
-            new Month("December", 12, 31)
+            new Month("Січень", 1, 31),
+            new Month("Лютий", 2, 28),
+            new Month("Березень", 3, 31),
+            new Month("Квітень", 4, 30),
+            new Month("Травень", 5, 31),
+            new Month("Червень", 6, 30),
+            new Month("Липень", 7, 31),
+            new Month("Серпень", 8, 31),
+            new Month("Вересень", 9, 30),
+            new Month("Жовтень", 10, 31),
+            new Month("Листопад", 11, 30),
+            new Month("Грудень", 12, 31)
         };
 
         public IEnumerator<Month> GetEnumerator()

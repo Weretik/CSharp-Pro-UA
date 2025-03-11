@@ -32,6 +32,39 @@ namespace _1._Custom_collections
             {
                 Console.WriteLine(month.Name);
             }
+
+
+            /*Завдання 3 
+
+            Створіть колекцію, яка б за своєю структурою нагадувала «родове дерево» (ім'я людини, рік народження), 
+            причому до неї можна додавати/вилучати нового родича, є можливість побачити всіх спадкоємців обраної людини, 
+            відібрати родичів за роком народження. 
+            */
+            Console.WriteLine();
+            var grandparent = new FamilyMember("Дідусь", 1940);
+            var parent = new FamilyMember("Тато", 1970);
+            var child = new FamilyMember("Син", 2000);
+            var child2 = new FamilyMember("Дочка", 2005);
+
+            var familyTree = new FamilyTree(grandparent);
+
+            familyTree.AddFamilyMember(parent, grandparent);
+            familyTree.AddFamilyMember(child, parent);
+            familyTree.AddFamilyMember(child2, parent);
+
+            
+            Console.WriteLine("Нащадки тата:");
+            foreach (var descendant in familyTree.GetDescendants(parent))
+            {
+                Console.WriteLine($"- {descendant.Name}, {descendant.BirthYear}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Діти, народжені в 2000 році:");
+            foreach (var person in familyTree.GetChildrenByBirthYear(parent, 2000))
+            {
+                Console.WriteLine($"- {person.Name}, {person.BirthYear}");
+            }
         }
         
     }
