@@ -1,6 +1,8 @@
 ﻿using System.Globalization;
 using System.Threading.Tasks;
 using System.Text;
+using System.Diagnostics;
+using System.IO.Compression;
 
 namespace _3._Input_and_Output_Programming
 {
@@ -28,6 +30,7 @@ namespace _3._Input_and_Output_Programming
             }
             //Видалення директорій
             directory.Delete(true);
+            
             */
 
 
@@ -61,6 +64,45 @@ namespace _3._Input_and_Output_Programming
                     }
                 }
                 file.Delete();
+            }
+            Console.WriteLine();
+            /*
+             * Завдання 3
+
+            Напишіть програму для пошуку заданого файлу на диску.
+            Додайте код, який використовує клас FileStream і дозволяє переглядати файл у текстовому вікні. Насамкінець додайте можливість стиснення знайденого файлу.
+            */
+            Console.WriteLine("Search:");
+            string[] findFile = Directory.GetFiles(@"C:\Users\User\OneDrive\Рабочий стол\C#", "Text.txt", SearchOption.AllDirectories);
+
+            foreach (var item in findFile)
+            {
+                Console.WriteLine($"Знайдено файл:\n{item}");
+
+                Console.Write("Прочитати та стиснути файл: y/n");
+                char answer = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                if (answer == 'y')
+                {
+                    string compressedFilePath = @"C:\Users\User\OneDrive\Рабочий стол\C#\Text.gz";
+
+                    using (FileStream originalFileStream = new FileStream(item, FileMode.Open, FileAccess.Read))
+                    using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Create))
+                    using (GZipStream compressionStream = new GZipStream(compressedFileStream, CompressionMode.Compress))
+                    {
+                        byte[] bytes = new byte[originalFileStream.Length];
+                        originalFileStream.Read(bytes, 0, (int)originalFileStream.Length);
+
+                        string content = Encoding.UTF8.GetString(bytes);
+                        Console.WriteLine(content);
+
+                        originalFileStream.CopyTo(compressionStream);
+                    }
+
+                    Console.WriteLine("Файл стиснуто");
+                }
+
             }
         }
     }
