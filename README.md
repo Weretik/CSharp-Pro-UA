@@ -18,7 +18,10 @@ This repository contains solutions to C# homework assignments based on **The C# 
    - **Task 4**: Implemented in [`Program.cs`](./2.%20System%20collections/Program.cs). Developed an `OrderedDictionary` collection with custom comparison capabilities.
    - **Task 6**: Implemented in [`Program.cs`](./2.%20System%20collections/Program.cs). Used `SortedList` to create a collection and displayed key-value pairs in alphabetical order and then in reverse order.
 
-
+### 3. **Input and Output Programming**  
+   - **Task 2**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Created a file, wrote arbitrary data into it, closed the file, then reopened it, read the data, and displayed it on the console.
+   - **Task 3**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Developed a program to search for a specified file on disk. Added functionality using `FileStream` to view the file in a text window and provided an option to compress the found file.
+   - **Task 6**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Created 100 directories named `Folder_0` to `Folder_99` on disk and then deleted them.
 
 
 
