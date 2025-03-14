@@ -24,11 +24,12 @@ This repository contains solutions to C# homework assignments based on **The C# 
    - **Task 6**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Created 100 directories named `Folder_0` to `Folder_99` on disk and then deleted them.
 
 
-### 4. Working with Text. Regular Expressions
-- **Task 2**: Write a program that extracts all links, phone numbers, and email addresses from a given web page and saves them to a file.
-- **Task 3**: Create a "Decoder" program that replaces all prepositions in a text file with the word "BARK!".
-- **Task 4**: Generate a receipt file containing "Product Name – Price UAH" entries with a purchase date. Display the receipt in both the user's current locale and `en-US` format.
-- **Task 6**: Develop a console program that allows users to register with a `Login` consisting only of Latin alphabet characters and a `Password` composed of numbers and symbols.
+### 4. Working with Text. Regular Expressions  
+- **Task 2**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Extracted all links, phone numbers, and email addresses from a given web page and saved them to a file.  
+- **Task 3**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Created a "Decoder" program that replaces all prepositions in a text file with the word "BARK!".  
+- **Task 4**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Generated a receipt file containing "Product Name – Price UAH" entries with a purchase date and displayed it in both the user's current locale and `en-US` format.  
+- **Task 6**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Developed a console program that allows users to register with a `Login` consisting only of Latin alphabet characters and a `Password` composed of numbers and symbols.  
+
 
 
 ## Requirements
