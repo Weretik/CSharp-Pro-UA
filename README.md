@@ -30,6 +30,14 @@ This repository contains solutions to C# homework assignments based on **The C# 
 - **Task 4**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Generated a receipt file containing "Product Name – Price UAH" entries with a purchase date and displayed it in both the user's current locale and `en-US` format.  
 - **Task 6**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Developed a console program that allows users to register with a `Login` consisting only of Latin alphabet characters and a `Password` composed of numbers and symbols.  
 
+### 5. XML. Configuration Files. Registry  
+- **Task 2**: Implemented in [`Program.cs`](./5.%20XML.%20Configuration%20files.%20Registry/Program.cs). Created a program that outputs all information about a specified `.xml` file.  
+- **Task 3**: Implemented in [`Program.cs`](./5.%20XML.%20Configuration%20files.%20Registry/Program.cs). Extracted and displayed only phone numbers from the `TelephoneBook.xml` file.  
+- **Task 4**: Implemented in [`Program.cs`](./5.%20XML.%20Configuration%20files.%20Registry/Program.cs). Developed an **administrator program** that saves configuration data in a special file or Windows registry. Created a **user program** whose interface can be controlled by the admin program.  
+- **Task 6**: Implemented in [`Program.cs`](./5.%20XML.%20Configuration%20files.%20Registry/Program.cs). Generated an `.xml` file named `TelephoneBook.xml`, which follows these specifications:  
+   - Root element: **`MyContacts`**  
+   - Each contact is represented by a **`Contact`** tag with the contact name and an attribute **`TelephoneNumber`** containing the phone number.  
+
 
 
 ## Requirements
