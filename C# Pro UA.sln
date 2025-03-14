@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. System collections", "2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Input and Output Programming", "3. Input and Output Programming\3. Input and Output Programming.csproj", "{E51E7E25-00FF-4E62-B14A-688131D7A68A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Working with text. Regular expressions", "Working with text. Regular expressions\Working with text. Regular expressions.csproj", "{459AA285-A575-4480-9C62-295D14951B9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Working with text. Regular expressions", "Working with text. Regular expressions\4. Working with text. Regular expressions.csproj", "{459AA285-A575-4480-9C62-295D14951B9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
