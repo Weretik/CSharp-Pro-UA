@@ -42,3 +42,30 @@ using (StreamWriter writer = new StreamWriter(path))
     }
 }
 
+/*
+ * Завдання 3
+
+Напишіть жартівливу програму «Дешифратор», яка в текстовому файлі могла б замінити всі прийменники слово «ГАВ!».
+*/
+
+string pathInputFile = @"C:\Users\User\OneDrive\Рабочий стол\C#\Input.txt";
+string pathOutputFile = @"C:\Users\User\OneDrive\Рабочий стол\C#\Output.txt";
+
+if (!File.Exists(pathInputFile))
+{
+    Console.WriteLine("Файл не знайдено! Створіть input.txt з текстом.");
+    return;
+}
+
+string text = File.ReadAllText(pathInputFile);
+
+string pattern = @"\s\b\w{1,3}\b\s";
+
+text = Regex.Replace(text, pattern, " ГАВ! ", RegexOptions.IgnoreCase);
+
+using StreamWriter writer2 = new StreamWriter(pathOutputFile);
+{ 
+    writer2.WriteLine(text);
+}
+
+Console.WriteLine("Файл оброблено! Перевірте Output.txt.");
