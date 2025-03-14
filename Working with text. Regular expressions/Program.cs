@@ -1,5 +1,5 @@
 ﻿
-using System;
+using System.Text;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
@@ -9,6 +9,9 @@ using System.Text.RegularExpressions;
 Напишіть програму, яка дозволила б за вказаною адресою web-сторінки вибирати всі посилання на інші сторінки, 
 номери телефонів, поштові адреси та зберігала отриманий результат у файл.
 */
+
+Console.OutputEncoding = Encoding.Unicode;
+Console.InputEncoding = Encoding.Unicode;
 
 using HttpClient client = new HttpClient();
 string pageContent = await client.GetStringAsync("https://brevi.com.ua/");
@@ -91,7 +94,7 @@ if (File.Exists(filePath))
     }
 
     Console.WriteLine("\nЧек у форматі en-US:");
-    decimal exchangeRate = 40.0m; // Курс грн -> USD
+    decimal exchangeRate = 40.0m;
 
     foreach (string line in lines)
     {
@@ -104,6 +107,58 @@ else
     Console.WriteLine("Файл не знайдено!");
 }
 
+
+
+
+string login = "";
+string password = "";
+
+
+while (true)
+{
+
+    Console.Write("Введіть логін (тільки латинські літери): ");
+    login = Console.ReadLine();
+
+    if (!IsValidLogin(login))
+    {
+        Console.WriteLine("Невірний логін. Логін повинен складатися лише з латинських літер.");
+        continue;
+    }
+
+    Console.Write("Введіть пароль (тільки цифри і символи): ");
+    password = Console.ReadLine();
+
+    if (!IsValidPassword(password))
+    {
+        Console.WriteLine("Невірний пароль. Пароль має складатися лише з цифр і символів.");
+        continue; 
+    }
+
+    break;
+}
+
+Console.WriteLine("Вітаємо, ви успішно зареєстровані!");
+
+
+
+
+//Завдання 6
+static bool IsValidLogin(string login)
+{
+    return Regex.IsMatch(login, @"^[a-zA-Z]+$");
+}
+
+static bool IsValidPassword(string password)
+{
+    return Regex.IsMatch(password, @"^[0-9\W]+$");
+}
+
+
+
+
+
+//Завдання 4
 static string ConvertToUSFormat(string line, decimal exchangeRate)
 {
     string pattern = @"(.+)\s[-–]\s(\d+[.,]?\d*)\sгрн\.";
