@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MyContacts>
+  <Contact TelephoneNumber="+(380) 96 087 77 08">Ivan</Contact>
+  <Contact TelephoneNumber="+(380) 96 087 77 09">Victor</Contact>
+</MyContacts>

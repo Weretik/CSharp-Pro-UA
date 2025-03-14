@@ -1,0 +1,11 @@
+﻿{
+  "Application": {
+    "ConsoleColor": "Green"
+  },
+  "Environment": {
+    "Database": {
+      "Name": "MyDatabase",
+      "ConnectionString": "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;"
+    }
+  }
+}
