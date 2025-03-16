@@ -67,7 +67,7 @@ if (root != null)
 яка зберігатиме дані конфігурації у спеціальному файлі або в реєстрі. Створіть програму користувача, 
 зовнішнім виглядом якого можна керувати за допомогою адмінпрограми.
  * 
- */
+ 
 
 var configuration = new ConfigurationBuilder()
     .AddJsonFile(@"C:\Users\User\OneDrive\Рабочий стол\C#\C# Pro UA\5. XML. Configuration files. Registry\settings.json")
@@ -99,3 +99,4 @@ public class DatabaseConfig
     public string Name { get; set; }
     public string ConnectionString { get; set; }
 }
+*/
