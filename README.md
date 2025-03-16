@@ -39,9 +39,9 @@ This repository contains solutions to C# homework assignments based on **The C# 
    - Each contact is represented by a **`Contact`** tag with the contact name and an attribute **`TelephoneNumber`** containing the phone number.  
 
 ### 6. Reflection  
-- **Task 2**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Created a custom **assembly** following the example of `CarLibrary` from the lesson. This assembly is used for a **temperature converter**.  
-- **Task 3**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Developed a program that provides the user access to the assembly from **Task 2**. Implemented a method for **converting temperature** from Celsius to Fahrenheit using **only reflection**.  
-- **Task 5**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Created a **reflection-based program** that retrieves information about an assembly and the types contained in it. The base for this implementation was taken from the **lesson's reflector program**.  
+- **Task 2**: Implemented in [`Program.cs`](./CSharpClient/Program.cs). Created a custom **assembly** following the example of `CarLibrary` from the lesson. This assembly is used for a [`temperature converter`](./TemperatureLibrary/TemperatureConverter.cs).  
+- **Task 3**: Implemented in [`Program.cs`](./LoadAssembly/Program.cs). Developed a program that provides the user access to the assembly from **Task 2**. Implemented a method for **converting temperature** from Celsius to Fahrenheit using **only reflection**.  
+- **Task 5**: Implemented in [`Program.cs`](./Reflector/Program.cs). Created a **reflection-based program** that retrieves information about an assembly and the types contained in it. The base for this implementation was taken from the **lesson's reflector program**.  
 
 
 ## Requirements
