@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Working with text. Regul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. XML. Configuration files. Registry", "5. XML. Configuration files. Registry\5. XML. Configuration files. Registry.csproj", "{B6F499E1-225B-4555-B951-49F67931AFA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Reflection", "6. Reflection\6. Reflection.csproj", "{5051B7E1-AAD5-4600-80D4-4101079869A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B6F499E1-225B-4555-B951-49F67931AFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F499E1-225B-4555-B951-49F67931AFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F499E1-225B-4555-B951-49F67931AFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5051B7E1-AAD5-4600-80D4-4101079869A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5051B7E1-AAD5-4600-80D4-4101079869A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5051B7E1-AAD5-4600-80D4-4101079869A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5051B7E1-AAD5-4600-80D4-4101079869A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
