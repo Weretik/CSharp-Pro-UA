@@ -1,5 +1,8 @@
 ﻿using System.Xml.Serialization;
 using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+using System.Text.Json;
 
 namespace _8._Serialization
 {
@@ -40,7 +43,36 @@ namespace _8._Serialization
             {
                 deserializerPerson = (Person)serializer.Deserialize(fs);
             }
+            Console.WriteLine("Об'єкт десеріалізовано:");
             Console.WriteLine($"Ім'я: {deserializerPerson.Name}, Вік: {deserializerPerson.Age}, Назва компанії: {deserializerPerson.Company.Name}");
+            Console.WriteLine();
+
+            /*
+             * Завдання 5 
+
+            Створіть тип користувача (наприклад, клас) і виконайте серіалізацію об'єкта цього типу, враховуючи той факт, що стан об'єкта необхідно буде передати по мережі.
+            */
+            
+            User user = new User("Іван", 30, "ivan@example.com");
+
+            byte[] serializedUser;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                JsonSerializer.Serialize(ms, user);
+                serializedUser = ms.ToArray();
+            }
+
+            Console.WriteLine("Об'єкт серіалізовано в байти.");
+
+            User deserializedUser;
+            using (MemoryStream ms = new MemoryStream(serializedUser))
+            {
+                deserializedUser = JsonSerializer.Deserialize<User>(ms);
+            }
+
+            Console.WriteLine("Об'єкт десеріалізовано із байтів:");
+            Console.WriteLine($"Ім'я: {deserializedUser.Name}, Вік: {deserializedUser.Age}, Назва компанії: {deserializedUser.Email}");
+
         }
     }
     public class Person(string name, int age, Company company)
@@ -65,5 +97,22 @@ namespace _8._Serialization
         public Company() : this("Underfined")
         {
         }
+    }
+
+    [Serializable]
+    public class User
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Email { get; set; }
+
+        public User(string name, int age, string email)
+        {
+            Name = name;
+            Age = age;
+            Email = email;
+        }
+
+        public User() { }
     }
 }
