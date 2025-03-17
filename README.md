@@ -23,7 +23,6 @@ This repository contains solutions to C# homework assignments based on **The C# 
    - **Task 3**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Developed a program to search for a specified file on disk. Added functionality using `FileStream` to view the file in a text window and provided an option to compress the found file.
    - **Task 6**: Implemented in [`Program.cs`](./3.%20Input%20and%20Output%20Programming/Program.cs). Created 100 directories named `Folder_0` to `Folder_99` on disk and then deleted them.
 
-
 ### 4. Working with Text. Regular Expressions  
 - **Task 2**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Extracted all links, phone numbers, and email addresses from a given web page and saved them to a file.  
 - **Task 3**: Implemented in [`Program.cs`](./4.%20Working%20with%20text.%20Regular%20expressions/Program.cs). Created a "Decoder" program that replaces all prepositions in a text file with the word "BARK!".  
@@ -42,6 +41,12 @@ This repository contains solutions to C# homework assignments based on **The C# 
 - **Task 2**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Created a custom **assembly** following the example of `CarLibrary` from the lesson. This assembly is used for a **temperature converter**.  
 - **Task 3**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Developed a program that provides the user access to the assembly from **Task 2**. Implemented a method for **converting temperature** from Celsius to Fahrenheit using **only reflection**.  
 - **Task 5**: Implemented in [`Program.cs`](./6.%20Reflection/Program.cs). Created a **reflection-based program** that retrieves information about an assembly and the types contained in it. The base for this implementation was taken from the **lesson's reflector program**.  
+
+### 7. Attributes  
+- **Task 2**: Implemented in [`MyClass.cs`](./7.%20Attributes/MyClass.cs). Applied the **Obsolete** attribute to methods, demonstrating warnings and compilation errors.  
+- **Task 3**: Implemented in [`Program.cs`](./7.%20Attributes/Program.cs). Extended the **reflection program**, adding filtering of type members and attribute display.  
+- **Task 5**: Implemented in [`SecureSystem.cs`](./7.%20Attributes/SecureSystem.cs). Created a **custom attribute** for defining user access levels and implemented role-based access control.  
+
 
 
 ## Requirements
