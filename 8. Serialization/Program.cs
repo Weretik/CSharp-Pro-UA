@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using System.Text;
 
 namespace _8._Serialization
 {
@@ -6,6 +7,8 @@ namespace _8._Serialization
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.Unicode;
+            Console.InputEncoding = Encoding.Unicode;
             /*
              * Завдання 2
 
@@ -17,13 +20,27 @@ namespace _8._Serialization
 
             XmlSerializer serializer = new XmlSerializer(typeof(Person));
 
-            using(FileStream fs = new FileStream("person.xml", FileMode.OpenOrCreate))
+            using(FileStream fs = new FileStream("person.xml", FileMode.Create))
             {
                 serializer.Serialize(fs, person);
             }
 
 
+            /*
+             * 
+             * Завдання 3
 
+            Створіть нову програму, в якій виконайте десеріалізацію об'єкта з попереднього прикладу. Відобразіть стан об'єкта на екрані.
+            */
+
+            Person deserializerPerson;
+            XmlSerializer deserializer = new XmlSerializer(typeof(Person));
+
+            using (FileStream fs = new FileStream("person.xml", FileMode.Open))
+            {
+                deserializerPerson = (Person)serializer.Deserialize(fs);
+            }
+            Console.WriteLine($"Ім'я: {deserializerPerson.Name}, Вік: {deserializerPerson.Age}, Назва компанії: {deserializerPerson.Company.Name}");
         }
     }
     public class Person(string name, int age, Company company)
