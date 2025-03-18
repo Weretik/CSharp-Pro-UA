@@ -65,6 +65,11 @@ This repository contains solutions to C# homework assignments based on **The C# 
 - **Task 4**: Implemented in [`Program.cs`](./9.%20Garbage%20collector/Program.cs). Developed a **memory-intensive class** with a large array and implemented a **formalized cleanup pattern**.  
 
 
+### 10. Versioning  
+- **Task 2**: Implemented in [`Program.cs`](./10.%20Versioning/Program.cs). Studied the **Template Method pattern** and implemented its abstract version in C#.  
+- **Task 4**: Implemented in [`Program.cs`](./10.%20Versioning/Program.cs). Applied the **Non-Virtual Interface (NVI) pattern** in a custom inheritance hierarchy.  
+
+
 
 ## Requirements
 
