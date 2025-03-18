@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Serialization", "8. Seri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Garbage collector", "9. Garbage collector\9. Garbage collector.csproj", "{8E9E60D0-5568-41EA-9FDC-09E9BC107920}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Versioning", "10. Versioning\10. Versioning.csproj", "{0E8038D6-89E6-4255-9CDD-2942FF1E0178}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{8E9E60D0-5568-41EA-9FDC-09E9BC107920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E9E60D0-5568-41EA-9FDC-09E9BC107920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E9E60D0-5568-41EA-9FDC-09E9BC107920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8038D6-89E6-4255-9CDD-2942FF1E0178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8038D6-89E6-4255-9CDD-2942FF1E0178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8038D6-89E6-4255-9CDD-2942FF1E0178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8038D6-89E6-4255-9CDD-2942FF1E0178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
