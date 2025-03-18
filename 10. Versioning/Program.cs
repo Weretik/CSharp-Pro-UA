@@ -18,8 +18,24 @@
             Console.WriteLine("\nОбробка XML-документа:");
             DocumentProcessor xmlProcessor = new XmlDocumentProcessor();
             xmlProcessor.ProcessDocument();
+            /*
+             * Завдання 4
+
+            Реалізуйте шаблон NVI у власній ієрархії успадкування.
+
+
+            */
+            Console.WriteLine("Збереження у текстовий файл:");
+            FileSaver textSaver = new TextFileSaver();
+            textSaver.SaveFile();
+
+            Console.WriteLine("Збереження у JSON-файл:");
+            FileSaver jsonSaver = new JsonFileSaver();
+            jsonSaver.SaveFile();
+
         }
     }
+    // * Завдання 2
     abstract class DocumentProcessor
     {
         public void ProcessDocument()
@@ -67,6 +83,48 @@
         protected override void SaveDocument()
         {
             Console.WriteLine("Збереження документа у форматі XML.");
+        }
+    }
+
+
+    // * Завдання 4
+    abstract class FileSaver
+    {
+        public void SaveFile()
+        {
+            Console.WriteLine("Ініціалізація процесу збереження файлу...");
+            OpenFile();
+            WriteContent();
+            CloseFile();
+            Console.WriteLine("Файл успішно збережено!\n");
+        }
+
+        private void OpenFile()
+        {
+            Console.WriteLine("Відкриття файлу для запису...");
+        }
+
+        private void CloseFile()
+        {
+            Console.WriteLine("Закриття файлу...");
+        }
+
+        protected abstract void WriteContent();
+    }
+
+    class TextFileSaver : FileSaver
+    {
+        protected override void WriteContent()
+        {
+            Console.WriteLine("Запис текстового вмісту у файл...");
+        }
+    }
+
+    class JsonFileSaver : FileSaver
+    {
+        protected override void WriteContent()
+        {
+            Console.WriteLine("Запис вмісту у форматі JSON...");
         }
     }
 }
