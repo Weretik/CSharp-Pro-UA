@@ -60,6 +60,11 @@ This repository contains solutions to C# homework assignments based on **The C# 
 - **Task 5**: Implemented in [`Program.cs`](./8.%20Serialization/Program.cs). Created a **custom type**, serialized its object, considering **network transmission** requirements.  
 
 
+### 9. Garbage Collector  
+- **Task 2**: Implemented in [`Program.cs`](./9.%20Garbage%20collector/Program.cs). Created a **resource monitoring class** that tracks memory usage and issues warnings when consumption approaches a set threshold.  
+- **Task 4**: Implemented in [`Program.cs`](./9.%20Garbage%20collector/Program.cs). Developed a **memory-intensive class** with a large array and implemented a **formalized cleanup pattern**.  
+
+
 
 ## Requirements
 
