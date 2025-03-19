@@ -82,6 +82,10 @@
 - **Task 4**: Implemented in [`Program.cs`](./11.%20Threads/Program.cs). Modified thread execution to ensure the **sequential operation of three threads** using **locking mechanisms**.  
 
 
+### 12. Synchronization  
+- **Task 3**: Implemented in [`Program.cs`](./12.%20Synchronization/Program.cs). Created a program that allows **only one instance** to run at a time using a **named Mutex**.  
+- **Task 5**: Implemented in [`Program.cs`](./12.%20Synchronization/Program.cs). Used a **Semaphore** to control access to a resource from multiple threads, ensuring an **ordered log output**.  
+
 
 ## Requirements
 
