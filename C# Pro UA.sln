@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Versioning", "10. Versi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Threads.", "11. Threads\11. Threads..csproj", "{44259C2C-B851-46D1-BF12-BBC31F42BE37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Synchronization", "12. Synchronization\12. Synchronization.csproj", "{0CD10E3F-0B59-450C-B50E-DE553049858F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{44259C2C-B851-46D1-BF12-BBC31F42BE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44259C2C-B851-46D1-BF12-BBC31F42BE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44259C2C-B851-46D1-BF12-BBC31F42BE37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD10E3F-0B59-450C-B50E-DE553049858F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD10E3F-0B59-450C-B50E-DE553049858F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD10E3F-0B59-450C-B50E-DE553049858F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD10E3F-0B59-450C-B50E-DE553049858F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
