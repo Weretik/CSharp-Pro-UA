@@ -1,8 +1,15 @@
 # C# Pro UA
 
-## Overview
+**C# Pro UA** is a repository containing solutions to assignments from the **C# Video Course for Professionals**. This course provides an in-depth exploration of the **Microsoft .NET Framework** and the **C# language**, covering essential topics such as:
 
-This repository contains solutions to C# homework assignments based on **The C# Video Course for Professionals**. The course focuses on an in-depth study of the **Microsoft .NET Framework** platform and the **C# language**. Topics covered include reflection and attributes, serialization, garbage collection, working with the file system, datasets, strings, XML, and more.
+- Custom and system collections
+- Input/output operations
+- Regular expressions and text processing
+- XML handling and configuration management
+- Reflection, attributes, and serialization
+- Memory management and garbage collection
+- Versioning and design patterns
+
 
 ## Project Structure
 
@@ -68,6 +75,11 @@ This repository contains solutions to C# homework assignments based on **The C# 
 ### 10. Versioning  
 - **Task 2**: Implemented in [`Program.cs`](./10.%20Versioning/Program.cs). Studied the **Template Method pattern** and implemented its abstract version in C#.  
 - **Task 4**: Implemented in [`Program.cs`](./10.%20Versioning/Program.cs). Applied the **Non-Virtual Interface (NVI) pattern** in a custom inheritance hierarchy.  
+
+
+### 11. Threads  
+- **Task 2**: Implemented in [`Program.cs`](./11.%20Threads/Program.cs). Created a **console application** that reads from two files in parallel threads and writes the data into a third file using **thread synchronization**.  
+- **Task 4**: Implemented in [`Program.cs`](./11.%20Threads/Program.cs). Modified thread execution to ensure the **sequential operation of three threads** using **locking mechanisms**.  
 
 
 
