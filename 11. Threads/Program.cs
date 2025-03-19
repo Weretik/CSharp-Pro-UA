@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Threading;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace _11._Threads_
 {
@@ -30,7 +31,28 @@ namespace _11._Threads_
             thread2.Join();
 
             Console.WriteLine("Файли об'єднані в output.txt");
+            Console.WriteLine();
+            
+            /*
+             * Завдання 4
+
+               Використовуючи конструкції блокування, модифікуйте останній приклад уроку таким чином, щоб отримати можливість послідовної роботи 3-х потоків.
+            */
+
+            Thread[] threads = { new Thread(Function), new Thread(Function), new Thread(Function) };
+
+            foreach (Thread thread in threads)
+            {
+                thread.Start();
+            }
+
+            foreach (Thread thread in threads)
+            {
+                thread.Join();
+            }
+
         }
+        // * Завдання 2
         private static object lockObject = new object();
         private static string file1 = "file1.txt";
         private static string file2 = "file2.txt";
@@ -50,6 +72,20 @@ namespace _11._Threads_
                 using (StreamWriter writer = new StreamWriter(outputFile, true))
                 {
                     writer.WriteLine(content);
+                }
+            }
+        }
+
+        // * Завдання 4
+        static int counter = 0;
+        static object block = new object();
+        static void Function()
+        {
+            for (int i = 0; i < 50; ++i)
+            {
+                lock (block)
+                {
+                    Console.WriteLine(++counter);
                 }
             }
         }
