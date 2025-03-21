@@ -87,6 +87,11 @@
 - **Task 5**: Implemented in [`Program.cs`](./12.%20Synchronization/Program.cs). Used a **Semaphore** to control access to a resource from multiple threads, ensuring an **ordered log output**.  
 
 
+### 13. TPL  
+- **Task 2**: Implemented in [`Program.cs`](./13.%20TPL/Program.cs). Created two methods running as **parallel tasks** and invoked them using `Invoke` without blocking the main thread.  
+- **Task 4**: Implemented in [`Program.cs`](./13.%20TPL/Program.cs). Generated a **large array** (1,000,000+ elements) with random values and used **PLINQ** to filter out all odd numbers.  
+
+
 ## Requirements
 
 - .NET SDK (latest stable version)
